@@ -1,8 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_app_log_in/AlphaBetScroll.dart';
 import 'package:flutter_app_log_in/FirstTab.dart';
 import 'package:flutter_app_log_in/SeconTab.dart';
 import 'package:flutter_app_log_in/ThirdTab.dart';
+
 
 void main() => runApp(MyApp());
 
@@ -33,8 +35,8 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(
           bottom: TabBar(
             tabs: [
-              Tab(icon: Icon(Icons.android), text: "Tab 1",),
-              Tab(icon: Icon(Icons.mouse), text: "Tab 2"),
+              Tab(icon: Icon(Icons.close), text: "Tab 1",),
+              Tab(icon: Icon(Icons.menu), text: "Tab 2"),
               Tab(icon: Icon(Icons.insert_photo), text: "Tab 3"),
               Tab(icon: Icon(Icons.phone_iphone), text: "Tab 4"),
             ],
@@ -54,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   rows: [
                     DataRow(cells: [
                       DataCell(Text('1')),
-                      DataCell(Text('Arya')),
+                      DataCell(Text('Dileep')),
                       DataCell(Text('6')),
                     ]),
                     DataRow(cells: [
@@ -64,18 +66,19 @@ class _MyHomePageState extends State<MyHomePage> {
                     ]),
                     DataRow(cells: [
                       DataCell(Text('42')),
-                      DataCell(Text('Tony')),
+                      DataCell(Text('Ganesh')),
                       DataCell(Text('8')),
                     ]),
                   ],
                 ),
             ),
             FirastTab(),
-            SecondTab(),
+            aLPHA(),
             ThirdTab(),
           ],
         ),
       ),
     );
   }
+
 }
